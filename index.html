@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Survey form</title>
+</head>
+<body>
+    <div class="background-image">
+    <div class="top">
+    <h1 id="title">Next Creations</h1>
+    <p id="description">Thank you for taking the time to help me decide on the next projects</p>
+</div>
+   
+    <!--Start of form-->
+    <form id="survey-form">
+
+        <!--Name-->
+        <div class="form-group" class="nameinput">
+            <label id="name-label" for="name">
+                Name<br>
+                
+            <input id="name" type="text" placeholder="Name" required>
+           
+        </label>
+        </div>
+
+        <!--Email-->
+        <div class="form-group">
+            <label  id="email-label" for="email">
+                Email <br>
+            <input class="form-group" id="email" type="email" placeholder="Email" required>
+            
+        </label>
+        </div>
+
+        <!--Age-->
+        <div class="form-group">
+            <label id="number-label" for="number">
+                Age<br>
+            <input id="number" type="number" min="10" max="99" placeholder="Age">
+            
+        </label>
+        </div>
+
+        <!--Gender-->
+        <div class="form-group">
+            <label id="dropdown" for="gender">
+            <p class="dropdown">Gender<br></p>
+            <select id="dropdown" name="gender" id="gender" placeholder="choose something">
+                <option value="Other">Rather not say</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+               
+            </select>
+        </label>
+        </div>
+
+        <!--Radio buttons-->
+        <div class="form-group" id="radiobuttons">
+            <p>Do you currently own any leather products?</p>
+            <label for="yes">
+                <input type="radio" name="user-recommend" id="yes" checked value="yes">
+                Yes
+            </label>
+
+            <label for="no">
+                <input type="radio" name="user-recommend" id="no" value="no">
+                No
+            </label>
+           
+        </div>
+
+        <!--Checkboxes-->
+        <div class="form-group" id="checkboxes">
+            <p>What would you like to see made?
+                <br>
+                (you can select multiple choices)
+            </p>
+            <label for="minimlistic">
+            <input type="checkbox" id="minimalistic" name="minimalistic" value="minimalistic" class="input-checkbox" >
+            - Minimalistic Card Holders
+            </label>
+
+            <br>
+
+            <label for="messengerbag">
+                <input type="checkbox" id="messengerbag" name="messengerbag" value="messengerbag" class="input-checkbox">
+                - Messenger Bags
+                </label>
+
+            <br>
+
+            <label for="mousepads">
+                <input type="checkbox" id="mousepads" name="prefer" value="mousepads" class="input-checkbox">
+                - Mouse Pads
+                </label>
+
+            <br>
+            
+            <label for="deskpad">
+                    <input type="checkbox" id="deskpad" name="prefer" value="deskpad" class="input-checkbox">
+                    - Desk Pad
+                    </label>
+        </div>
+
+        
+        <!--Text-area-->
+        <div class="form-group" id="text-area">
+            <p>Anything else that was not listed here?</p>
+            <textarea name="Comment" id="comments" placeholder="Enter stuff here..."></textarea>
+        </div>
+        <button id="submit" type="submit">SUBMIT</button>
+    </form>
+</div>
+</body>
+</html>
